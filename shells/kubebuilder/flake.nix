@@ -20,7 +20,6 @@
             gopls
             gotools
             delve
-            controller-tools
             kustomize
             kubectl
             kind
