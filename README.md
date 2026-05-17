@@ -40,6 +40,7 @@ Or just grab the raw `flake.nix` from `templates/<type>/` and drop it in.
 | C# .NET | `shells/dotnet/` | `templates/dotnet/` |
 | C | `shells/c/` | `templates/c/` |
 | NPM/JS | `shells/npm/` | `templates/npm/` |
+| LaTeX | `shells/latex/` | `templates/latex/` |
 
 ## Available libs
 
