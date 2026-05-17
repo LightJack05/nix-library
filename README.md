@@ -49,6 +49,7 @@ Or just grab the raw `flake.nix` from `templates/<type>/` and drop it in.
 | `lib/podman/` | `podman`, `podman-compose`, sets `KIND_EXPERIMENTAL_PROVIDER=podman` |
 | `lib/qemu/` | `qemu` |
 | `lib/go-license-collector/` | `go-license-collector` — collects and verifies Go dependency licenses |
+| `lib/kind/` | `kind` — local Kubernetes clusters; pair with `lib/podman/` |
 
 ## Adding a lib to a template
 
