@@ -48,6 +48,7 @@ Or just grab the raw `flake.nix` from `templates/<type>/` and drop it in.
 | `lib/general/` | `curl`, `gnumake`, `jq`, `git` — included in every template automatically |
 | `lib/podman/` | `podman`, `podman-compose`, sets `KIND_EXPERIMENTAL_PROVIDER=podman` |
 | `lib/qemu/` | `qemu` |
+| `lib/go-license-collector/` | `go-license-collector` — collects and verifies Go dependency licenses |
 
 ## Adding a lib to a template
 
