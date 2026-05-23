@@ -16,9 +16,10 @@
         let pkgs = nixpkgs.legacyPackages.${system};
         in {
           packages = with pkgs; [
-            # Use the unwrapped clang: the cc-wrapper injects a host --target flag
-            # that conflicts with --target bpf at compile time.
-            llvmPackages.clang-unwrapped
+            # Wrapped clang/gcc for userspace (loader) compilation.
+            # clang-unwrapped is kept out of PATH and accessed only via $BPF_CLANG
+            # so there is no ambiguity about which compiler is used for which target.
+            clang
             llvmPackages.llvm
             gcc
             pkg-config
@@ -31,8 +32,10 @@
           ];
           shellHook = ''
             echo "BPF/CO-RE development shell"
-            ${pkgs.llvmPackages.clang-unwrapped}/bin/clang --version | head -1
+            clang --version | head -1
             bpftool version 2>/dev/null | head -1 || true
+            # clang-unwrapped is in the closure but not in PATH; use $BPF_CLANG for
+            # BPF kernel-side compilation to avoid the cc-wrapper host --target flag.
             export BPF_CLANG="${pkgs.llvmPackages.clang-unwrapped}/bin/clang"
           '' + pkgs.lib.optionalString pkgs.stdenv.isLinux ''
             export BPF_CFLAGS="-I${pkgs.linuxHeaders}/include"
