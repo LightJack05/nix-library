@@ -2,7 +2,7 @@
 
 Development shell for BPF programs with CO-RE (Compile Once – Run Everywhere). Linux only.
 
-Packages: `llvmPackages.clang-unwrapped`, `llvmPackages.llvm`, `gcc`, `pkg-config`, `gnumake`, `libbpf`, `bpftools` (provides `bpftool`), `linuxHeaders`
+Packages: `llvmPackages.clang-unwrapped`, `llvmPackages.llvm`, `gcc`, `pkg-config`, `gnumake`, `libbpf`, `bpftools` (provides `bpftool`), `linuxHeaders`, `zstd`
 
 The Linux-only packages (`libbpf`, `bpftools`, `linuxHeaders`) are conditionally included via `lib.optionals stdenv.isLinux`.
 

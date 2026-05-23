@@ -27,6 +27,7 @@
             libbpf
             bpftools
             linuxHeaders
+            zstd
           ];
           shellHook = ''
             echo "BPF/CO-RE development shell"
