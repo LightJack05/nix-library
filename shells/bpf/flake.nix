@@ -29,7 +29,7 @@
           shellHook = ''
             echo "BPF/CO-RE development shell"
             clang --version | head -1
-            bpftools version 2>/dev/null | head -1 || true
+            bpftool version 2>/dev/null | head -1 || true
           '';
         }
       );
