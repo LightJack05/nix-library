@@ -25,6 +25,7 @@
             kustomize
             kubectl
             kind
+            yq
           ];
           shellHook = ''
             echo "Kubebuilder development shell"
