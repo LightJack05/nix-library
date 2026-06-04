@@ -20,8 +20,8 @@
             gopls
             gotools
             delve
-            helm
             kubernetes-controller-tools
+            kubernetes-helm
             kubebuilder
             kustomize
             kubectl
