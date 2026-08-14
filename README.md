@@ -42,6 +42,7 @@ Or just grab the raw `flake.nix` from `templates/<type>/` and drop it in.
 | NPM/JS | `shells/npm/` | `templates/npm/` |
 | LaTeX | `shells/latex/` | `templates/latex/` |
 | BPF/CO-RE | `shells/bpf/` | `templates/bpf/` |
+| Ansible | `shells/ansible/` | `templates/ansible/` |
 
 ## Available libs
 
