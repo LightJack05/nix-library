@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    kubebuilderShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/kubebuilder";
+    kubebuilderShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/kubebuilder";
   };
 
   outputs = { self, nixpkgs, kubebuilderShell }:

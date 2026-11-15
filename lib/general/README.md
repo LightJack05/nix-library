@@ -8,7 +8,7 @@ Packages: `curl`, `gnumake`, `jq`, `git`.
 
 1. Add the input:
 
-       inputs.generalLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/general";
+       inputs.generalLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/general";
 
 2. Add the input name to the `outputs` function arguments.
 

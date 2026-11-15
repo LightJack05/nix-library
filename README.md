@@ -20,7 +20,7 @@ Copy the template for your project type into your repo root:
 
 ```
 cp <(nix run nixpkgs#curl -- -sL \
-  "https://gitea.lightjack.de/LightJack05/nix-library/raw/branch/main/templates/go/flake.nix") \
+  "https://github.com/LightJack05/nix-library/raw/branch/main/templates/go/flake.nix") \
   flake.nix
 nix flake update
 nix develop
@@ -60,7 +60,7 @@ Each template already has the optional libs pre-wired as comments. To enable Pod
 
 1. Uncomment the input:
    ```nix
-   podmanLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman";
+   podmanLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/podman";
    ```
 2. Uncomment the two merge lines in `optionalPackages` and `optionalHook`.
 3. Run `nix flake update`.
@@ -69,11 +69,11 @@ Each template already has the optional libs pre-wired as comments. To enable Pod
 
 ```
 # A shell
-git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/go
+git+https://github.com/LightJack05/nix-library?dir=shells/go
 
 # A lib
-git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman
+git+https://github.com/LightJack05/nix-library?dir=lib/podman
 
 # A template (copy the file directly rather than importing it)
-https://gitea.lightjack.de/LightJack05/nix-library/raw/branch/main/templates/go/flake.nix
+https://github.com/LightJack05/nix-library/raw/branch/main/templates/go/flake.nix
 ```

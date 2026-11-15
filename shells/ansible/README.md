@@ -6,7 +6,7 @@ Packages: `ansible`, `ansible-lint`, `ansible-language-server`, `yamllint`, `ssh
 
 ## As a flake input
 
-    inputs.ansibleShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/ansible";
+    inputs.ansibleShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/ansible";
 
 Reference `ansibleShell.shellConfig.${system}.packages` and `ansibleShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

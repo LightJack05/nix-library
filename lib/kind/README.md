@@ -10,7 +10,7 @@ Pair with `lib/podman/` and set `KIND_EXPERIMENTAL_PROVIDER=podman` to use kind 
 
 1. Add the input:
 
-       inputs.kindLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/kind";
+       inputs.kindLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/kind";
 
 2. Add the input name to the `outputs` function arguments.
 

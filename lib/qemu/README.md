@@ -8,7 +8,7 @@ Packages: `qemu`.
 
 1. Add the input:
 
-       inputs.qemuLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/qemu";
+       inputs.qemuLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/qemu";
 
 2. Add the input name to the `outputs` function arguments.
 

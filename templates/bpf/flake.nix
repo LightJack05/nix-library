@@ -3,11 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    bpfShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/bpf";
-    generalLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/general";
+    bpfShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/bpf";
+    generalLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/general";
     # --- Optional libs (uncomment input + merge lines below to enable) ---
-    # podmanLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman";
-    # qemuLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/qemu";
+    # podmanLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/podman";
+    # qemuLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/qemu";
   };
 
   outputs = { self, nixpkgs, bpfShell, generalLib, ... }:

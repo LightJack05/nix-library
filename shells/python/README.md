@@ -6,7 +6,7 @@ Packages: `python3`, `python3Packages.pip`, `python3Packages.virtualenv`
 
 ## As a flake input
 
-    inputs.pythonShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/python";
+    inputs.pythonShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/python";
 
 Reference `pythonShell.shellConfig.${system}.packages` and `pythonShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

@@ -9,7 +9,7 @@ Sets `KIND_EXPERIMENTAL_PROVIDER=podman` so that kind uses Podman as its contain
 
 1. Add the input:
 
-       inputs.podmanLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman";
+       inputs.podmanLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/podman";
 
 2. Add the input name to the `outputs` function arguments.
 

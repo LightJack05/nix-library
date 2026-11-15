@@ -8,7 +8,7 @@ Packages: `go-license-collector`.
 
 1. Add the input:
 
-       inputs.goLicenseCollectorLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/go-license-collector";
+       inputs.goLicenseCollectorLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/go-license-collector";
 
 2. Add the input name to the `outputs` function arguments.
 

@@ -28,7 +28,7 @@ Example Makefile:
 
 ## As a flake input
 
-    inputs.bpfShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/bpf";
+    inputs.bpfShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/bpf";
 
 Reference `bpfShell.shellConfig.${system}.packages` and `bpfShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

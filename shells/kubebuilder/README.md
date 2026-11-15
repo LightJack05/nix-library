@@ -6,7 +6,7 @@ Packages: `go`, `gopls`, `gotools`, `delve`, `controller-tools`, `kustomize`, `k
 
 ## As a flake input
 
-    inputs.kubebuilderShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/kubebuilder";
+    inputs.kubebuilderShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/kubebuilder";
 
 Reference `kubebuilderShell.shellConfig.${system}.packages` and `kubebuilderShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

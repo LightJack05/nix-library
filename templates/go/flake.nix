@@ -3,12 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    goShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/go";
-    generalLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/general";
-    podmanLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman";
+    goShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/go";
+    generalLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/general";
+    podmanLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/podman";
     # --- Optional libs (uncomment input + merge lines below to enable) ---
-    # kindLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/kind";
-    # qemuLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/qemu";
+    # kindLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/kind";
+    # qemuLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/qemu";
   };
 
   outputs = { self, nixpkgs, goShell, generalLib, podmanLib, ... }:

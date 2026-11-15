@@ -6,7 +6,7 @@ Packages: `texlive.combined.scheme-full`, `perlPackages.LatexIndent`, `gnumake`,
 
 ## As a flake input
 
-    inputs.latexShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/latex";
+    inputs.latexShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/latex";
 
 Reference `latexShell.shellConfig.${system}.packages` and `latexShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

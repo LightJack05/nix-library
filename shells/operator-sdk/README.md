@@ -6,7 +6,7 @@ Packages: `go`, `gopls`, `gotools`, `delve`, `controller-tools`, `kustomize`, `k
 
 ## As a flake input
 
-    inputs.operatorSdkShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/operator-sdk";
+    inputs.operatorSdkShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/operator-sdk";
 
 Reference `operatorSdkShell.shellConfig.${system}.packages` and `operatorSdkShell.shellConfig.${system}.shellHook` to merge into your own dev shell.
 

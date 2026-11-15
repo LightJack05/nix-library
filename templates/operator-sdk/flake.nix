@@ -3,12 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    operatorSdkShell.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=shells/operator-sdk";
-    generalLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/general";
-    podmanLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/podman";
-    kindLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/kind";
+    operatorSdkShell.url = "git+https://github.com/LightJack05/nix-library?dir=shells/operator-sdk";
+    generalLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/general";
+    podmanLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/podman";
+    kindLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/kind";
     # --- Optional libs (uncomment input + merge lines below to enable) ---
-    # qemuLib.url = "git+https://gitea.lightjack.de/LightJack05/nix-library?dir=lib/qemu";
+    # qemuLib.url = "git+https://github.com/LightJack05/nix-library?dir=lib/qemu";
   };
 
   outputs = { self, nixpkgs, operatorSdkShell, generalLib, podmanLib, kindLib, ... }:
